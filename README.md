@@ -1,10 +1,8 @@
-# amélioration possible : 
-- Baser la fonctionnalité back-end sur du 1/2. C'est-à-dire renvoyer une fois sur deux la version A ou la version B. Actuellement cela est renvoyer de manière aléatoire, mais permet d'avoir un prototype fonctionnel.
-- TU's sur la fonctionnalité A/B testing / Stats
-- Ajouter un .env
+# Futur upgrade : 
+- Base back-end functionality on 1/2. Send version A or version B every other time. For the moment, this is done randomly, but it allows you to have a working prototype.
+- Unit testing of the A/B testing / Stats functionality
 
-
-# Feature bonus sur le prototype : 
-- Enregistrement en BDD de chaque requête de version (chaque entrée sur le site).
-- Enregistrement en BDD de chaque parcours qui a été jusqu'au bout.
-- Une fonctionnalité de statistique (retourner actuellement dans la console), qui croise les deux données précédentes et permet d'avoir un pourcentage du taux de conversion pour chaque version
+# Feature bonus : 
+- Database recording of each version request (each entry on the site).
+- BDD record for each funnel 100% complete
+- A statistics function (currently log in the console), which provides a percentage conversion rate for each version.
