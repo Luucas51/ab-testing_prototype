@@ -1,4 +1,4 @@
-import { equals, find, has, path, prop, propOr } from "ramda";
+import { equals, find, has, path, prop } from "ramda";
 import { Link } from 'react-router-dom';
 
 const ViewBasket = ({version}) => {

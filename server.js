@@ -1,10 +1,18 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
-require('./models/db');
+const { equals } = require('ramda');
+
+if (equals(true, process.env.DB_LOCAL)) {
+  require('./models/db');
+} else {
+  require('./models/dbAtlas')
+}
+
 const app = express();
 
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 8085;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
